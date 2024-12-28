@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Techshop/static/css/main.a3672f10.css",
-    "main.js": "/Techshop/static/js/main.0c917979.js",
+    "main.js": "/Techshop/static/js/main.c120ca7f.js",
     "static/js/488.45ab678d.chunk.js": "/Techshop/static/js/488.45ab678d.chunk.js",
     "static/media/boat381-3.png": "/Techshop/static/media/boat381-3.96ae34e020040ced98fd.png",
     "static/media/jbl660nc-1.png": "/Techshop/static/media/jbl660nc-1.4aa5ade12591d3d45e65.png",
@@ -77,11 +77,11 @@
     "static/media/sony-ex14ap-4.png": "/Techshop/static/media/sony-ex14ap-4.617fc6bc20205aed8278.png",
     "index.html": "/Techshop/index.html",
     "main.a3672f10.css.map": "/Techshop/static/css/main.a3672f10.css.map",
-    "main.0c917979.js.map": "/Techshop/static/js/main.0c917979.js.map",
+    "main.c120ca7f.js.map": "/Techshop/static/js/main.c120ca7f.js.map",
     "488.45ab678d.chunk.js.map": "/Techshop/static/js/488.45ab678d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3672f10.css",
-    "static/js/main.0c917979.js"
+    "static/js/main.c120ca7f.js"
   ]
 }
