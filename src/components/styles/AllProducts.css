@@ -1,0 +1,199 @@
+/* Base Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures content will wrap on smaller screens */
+    position: relative; /* For positioning the scrollbar */
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-right: 1px solid #ddd;
+    height: 100vh; /* Ensures sidebar takes full height */
+    overflow-x: auto; /* Allows horizontal scroll if content overflows */
+    white-space: nowrap; /* Prevents wrapping */
+    position: relative; /* Ensure it stays within the container */
+}
+
+.product-grid {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    overflow-x: auto; /* Ensures scrolling on overflow */
+}
+
+.heading {
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.divider {
+    margin: 15px 0;
+    border: 1px solid #555;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.sort-button {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+}
+
+.sort-button:hover {
+    background-color: #0056b3;
+}
+
+.price-range {
+    margin-bottom: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+/* Custom Scrollbar Styles */
+.sidebar-scrollable::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.sidebar-scrollable::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-scrollable::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.sidebar-scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.sidebar-scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mobile: Small screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sidebar and product grid */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar full width on mobile */
+        height: auto; /* Adjust height as needed */
+        overflow-x: auto; /* Horizontal scroll */
+        white-space: nowrap; /* Prevent items from wrapping */
+        display: block;
+        position: sticky;
+        top: 0; /* Make sidebar stick to the top */
+        z-index: 100; /* Ensure sidebar is on top of grid */
+    }
+
+    /* Adding a scrollable wrapper around the sidebar and the grid */
+    .product-grid-wrapper {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scroll for the grid */
+        padding-top: 40px; /* Make room for the sidebar */
+    }
+
+    .product-grid {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .sort-button {
+        font-size: 14px;
+    }
+
+    .options,
+    .price-range {
+        margin-bottom: 15px;
+    }
+
+    .divider {
+        margin: 10px 0;
+    }
+}
+
+/* Tablet: Medium screens */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .product-grid {
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 17px;
+    }
+
+    .sort-button {
+        font-size: 15px;
+    }
+
+    .divider {
+        margin: 12px 0;
+    }
+
+    .options,
+    .price-range {
+        margin-bottom: 18px;
+    }
+}
+
+/* Desktop: Large screens */
+@media (min-width: 1025px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .product-grid {
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .sort-button {
+        font-size: 16px;
+    }
+}
